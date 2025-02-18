@@ -18,6 +18,7 @@
         color: #333;
       }
       /* Modal Dialog Box Styles */
+/* Modal Dialog Box Styles */
 .modal {
   display: none;
   position: fixed;
@@ -27,7 +28,6 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  overflow: auto;
   padding-top: 60px;
 }
 
@@ -35,8 +35,10 @@
   background-color: white;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
+  border-radius: 10px;
   width: 50%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .close {
@@ -44,33 +46,93 @@
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
-  cursor: pointer;
 }
 
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Grid Layout for Medals */
 .medal-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 15px;
 }
 
 .medal-item {
-  text-align: center;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
   cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.medal-item:hover {
-  background-color: #ddd;
+.medal-item i {
+  font-size: 30px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
 }
+
+/* Medal Colors */
+.medal-item.gold {
+  background-color: #FFD700;
+  color: #fff;
+}
+
+.medal-item.silver {
+  background-color: #C0C0C0;
+  color: #fff;
+}
+
+.medal-item.bronze {
+  background-color: #cd7f32;
+  color: #fff;
+}
+
+.medal-item.participant {
+  background-color: #A9A9A9;
+  color: #fff;
+}
+
+/* Hover Effects */
+.medal-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.medal-item.gold:hover {
+  background-color: #ffcc00;
+}
+
+.medal-item.silver:hover {
+  background-color: #b8b8b8;
+}
+
+.medal-item.bronze:hover {
+  background-color: #a36d2e;
+}
+
+.medal-item.participant:hover {
+  background-color: #8a8a8a;
+}
+
 
       .modal {
       display: block;
@@ -1323,18 +1385,31 @@
         </div>
     </div>
 </div>-->
-      <div id="medalDialog" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2>Select Medal</h2>
-          <div class="medal-grid">
-            <div class="medal-item">Gold</div>
-            <div class="medal-item">Silver</div>
-            <div class="medal-item">Bronze</div>
-            <div class="medal-item">Participant</div>
-          </div>
-        </div>
+      <!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Medal Dialog Box -->
+<div id="medalDialog" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Select Medal</h2>
+    <div class="medal-grid">
+      <div class="medal-item gold">
+        <i class="fas fa-medal"></i> Gold
       </div>
+      <div class="medal-item silver">
+        <i class="fas fa-medal"></i> Silver
+      </div>
+      <div class="medal-item bronze">
+        <i class="fas fa-medal"></i> Bronze
+      </div>
+      <div class="medal-item participant">
+        <i class="fas fa-user-check"></i> Participant
+      </div>
+    </div>
+  </div>
+</div>
+
       <div id="documentModal" class="modal"
         style="display: block; background-color: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000;">
         <div class="modal-content">
