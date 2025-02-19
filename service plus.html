@@ -1386,29 +1386,30 @@ h2 {
     </div>
 </div>-->
       <!-- Font Awesome for Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<!-- Medal Dialog Box -->
-<div id="medalDialog" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Select Medal</h2>
-    <div class="medal-grid">
-      <div class="medal-item gold">
-        <i class="fas fa-medal"></i> Gold
+      <!-- Medal Dialog Box -->
+      <div id="medalDialog" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Select Medal</h2>
+          <div class="medal-grid">
+            <div class="medal-item gold">
+              <i class="fas fa-medal"></i> Gold
+            </div>
+            <div class="medal-item silver">
+              <i class="fas fa-medal"></i> Silver
+            </div>
+            <div class="medal-item bronze">
+              <i class="fas fa-medal"></i> Bronze
+            </div>
+            <div class="medal-item participant">
+              <i class="fas fa-user-check"></i> Participant
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="medal-item silver">
-        <i class="fas fa-medal"></i> Silver
-      </div>
-      <div class="medal-item bronze">
-        <i class="fas fa-medal"></i> Bronze
-      </div>
-      <div class="medal-item participant">
-        <i class="fas fa-user-check"></i> Participant
-      </div>
-    </div>
-  </div>
-</div>
 
       <div id="documentModal" class="modal"
         style="display: block; background-color: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000;">
@@ -1417,42 +1418,6 @@ h2 {
 
           <form>
             <!-- System Information Section -->
-            <div class="section">
-              <h2 class="section-title">System Information</h2>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="initiatedDataId">Initiated Data ID:</label>
-                  <input type="text" id="initiatedDataId" value="467064"
-                    readonly>
-                </div>
-                <div class="form-group">
-                  <label for="attributeDetailID">Attribute Detail ID:</label>
-                  <input type="text" id="attributeDetailID" value="11506469"
-                    readonly>
-                </div>
-                <div class="form-group">
-                  <label for="taskDetailID">Task Detail ID:</label>
-                  <input type="text" id="taskDetailID" value="131864" readonly>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="executionDataId">Execution Data ID:</label>
-                  <input type="text" id="executionDataId" value="131864"
-                    readonly>
-                </div>
-                <div class="form-group">
-                  <label for="officialFormDetailID">Official Form Detail
-                    ID:</label>
-                  <input type="text" id="officialFormDetailID" value="1082454"
-                    readonly>
-                </div>
-                <div class="form-group">
-                  <label for="applId">Application ID:</label>
-                  <input type="text" id="applId" value="34778072" readonly>
-                </div>
-              </div>
-            </div>
 
             <!-- Application Details Section -->
             <div class="section">
@@ -1460,33 +1425,29 @@ h2 {
               <div class="form-row">
                 <div class="form-group">
                   <label for="applRefNo">Application Reference No:</label>
-                  <input type="text" id="applRefNo" value="SEEP/2025/01859"
-                    readonly>
+                  <input type="text" id="applRefNo" readonly>
                 </div>
                 <div class="form-group">
                   <label for="taskName">Task Name:</label>
-                  <input type="text" id="taskName"
-                    value="District Sport Officer" readonly>
+                  <input type="text" id="taskName" readonly>
                 </div>
                 <div class="form-group">
                   <label for="taskId">Task ID:</label>
-                  <input type="text" id="taskId" value="23005" readonly>
+                  <input type="text" id="taskId" readonly>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
                   <label for="serviceId">Service ID:</label>
-                  <input type="text" id="serviceId" value="21090018" readonly>
+                  <input type="text" id="serviceId" readonly>
                 </div>
                 <div class="form-group">
                   <label for="serviceName">Service Name:</label>
-                  <input type="text" id="serviceName"
-                    value="Punjab Sports Events Portal" readonly>
+                  <input type="text" id="serviceName" readonly>
                 </div>
                 <div class="form-group">
                   <label for="submissionDate">Submission Date:</label>
-                  <input type="text" id="submissionDate"
-                    value="2025-01-20T17:27:35Z" readonly>
+                  <input type="text" id="submissionDate" readonly>
                 </div>
               </div>
             </div>
@@ -1500,38 +1461,82 @@ h2 {
                     <div class="form-group">
                       <label for="applicantFirstName">Applicant First
                         Name:</label>
-                      <input type="text" id="applicantFirstName"
-                        value="Namita Barman" readonly>
+                      <input type="text" id="applicantFirstName" readonly>
                     </div>
                     <div class="form-group">
                       <label for="applicantFatherName">Applicant Father
                         Name:</label>
-                      <input type="text" id="applicantFatherName"
-                        value="Kavi Prasad Barman" readonly>
+                      <input type="text" id="applicantFatherName" readonly>
                     </div>
                     <div class="form-group">
-                      <label for="applicantBloodGroup">Applicant Blood
-                        Group:</label>
-                      <input type="text" id="applicantBloodGroup" value="O +"
-                        readonly>
+                      <label for="applicantMotherName">Applicant Mother
+                        Name:</label>
+                      <input type="text" id="applicantMotherName" readonly>
                     </div>
                   </div>
                   <div class="form-row">
                     <div class="form-group">
+                      <label for="applicantDOB">Applicant DOB:</label>
+                      <input type="text" id="applicantDOB" readonly>
+                    </div>
+                    <div class="form-group">
+                      <label for="applicantAge">Applicant Age:</label>
+                      <input type="text" id="applicantAge" readonly>
+                    </div>
+                    <div class="form-group">
+                      <label for="stateOfBirth">State of Birth:</label>
+                      <input type="text" id="stateOfBirth" readonly>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="districtOfBirth">District of Birth:</label>
+                      <input type="text" id="districtOfBirth" readonly>
+                    </div>
+                    <div class="form-group">
+                      <label for="applicantBloodGroup">Applicant Blood
+                        Group:</label>
+                      <input type="text" id="applicantBloodGroup" readonly>
+                    </div>
+                    <div class="form-group">
                       <label for="applicantMobileNo">Applicant Mobile
                         No:</label>
-                      <input type="text" id="applicantMobileNo"
-                        value="7814205480" readonly>
+                      <input type="text" id="applicantMobileNo" readonly>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="applicantAlternateMobileNumber">Alternate
+                        Mobile No:</label>
+                      <input type="text" id="applicantAlternateMobileNumber"
+                        readonly>
+                    </div>
+                    <div class="form-group">
+                      <label for="applicantEmail">Applicant Email:</label>
+                      <input type="text" id="applicantEmail" readonly>
                     </div>
                     <div class="form-group">
                       <label for="applicantGender">Applicant Gender:</label>
-                      <input type="text" id="applicantGender" value="Female"
-                        readonly>
+                      <input type="text" id="applicantGender" readonly>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="physicalDisability">Physical
+                        Disability:</label>
+                      <input type="text" id="physicalDisability" readonly>
+                    </div>
+                    <div class="form-group">
+                      <label for="maritialStatus">Marital Status:</label>
+                      <input type="text" id="maritialStatus" readonly>
+                    </div>
+                    <div class="form-group">
+                      <label for="isEmployed">Is Employed:</label>
+                      <input type="text" id="isEmployed" readonly>
                     </div>
                   </div>
                 </div>
                 <div class="image-section">
-
                   <img
                     src="https://images.unsplash.com/photo-1473830394358-91588751b241?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Profile Photo" class="profile-image">
@@ -1539,30 +1544,72 @@ h2 {
               </div>
             </div>
 
-            <!-- Sport Details Section -->
+            <!-- Address Details Section -->
             <div class="section">
-              <h2 class="section-title">Sport Details</h2>
+              <h2 class="section-title">Address Details</h2>
               <div class="form-row">
                 <div class="form-group">
-                  <label for="applicantGame">Applicant Game:</label>
-                  <input type="text" id="applicantGame"
-                    value="Badminton(ਬੈਡਮਿੰਟਨ)" readonly>
+                  <label for="completeAddress">Complete Address:</label>
+                  <input type="text" id="completeAddress" readonly>
                 </div>
                 <div class="form-group">
-                  <label for="applicantAgeGroup">Applicant Age Group:</label>
-                  <input type="text" id="applicantAgeGroup"
-                    value="Under 31 to 40" readonly>
+                  <label for="region">Region:</label>
+                  <input type="text" id="region" readonly>
                 </div>
                 <div class="form-group">
-                  <label for="applicantEvent">Applicant Event:</label>
-                  <input type="text" id="applicantEvent" value="Match" readonly>
+                  <label for="addState">State:</label>
+                  <input type="text" id="addState" readonly>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
-                  <label for="applicantMedal">Applicant Medal:</label>
-                  <input type="text" id="applicantMedal" value="Gold" readonly>
+                  <label for="addDistrict">District:</label>
+                  <input type="text" id="addDistrict" readonly>
                 </div>
+                <div class="form-group">
+                  <label for="addPincode">Pincode:</label>
+                  <input type="text" id="addPincode" readonly>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bank Details Section -->
+            <div class="section">
+              <h2 class="section-title">Bank Details</h2>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="bankName">Bank Name:</label>
+                  <input type="text" id="bankName" readonly>
+                </div>
+                <div class="form-group">
+                  <label for="accountNumber">Account Number:</label>
+                  <input type="text" id="accountNumber" readonly>
+                </div>
+                <div class="form-group">
+                  <label for="ifscCode">IFSC Code:</label>
+                  <input type="text" id="ifscCode" readonly>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="accountHolder">Account Holder:</label>
+                  <input type="text" id="accountHolder" readonly>
+                </div>
+                <div class="form-group">
+                  <label for="nameOnPassbook">Name on Passbook:</label>
+                  <input type="text" id="nameOnPassbook" readonly>
+                </div>
+                <div class="form-group">
+                  <label for="bankAddress">Bank Address:</label>
+                  <input type="text" id="bankAddress" readonly>
+                </div>
+              </div>
+            </div>
+            <!-- Education Details Section -->
+            <div class="section">
+              <h2 class="section-title">Education Details</h2>
+              <div id="educationDetails">
+                <!-- Education details will be dynamically added here -->
               </div>
             </div>
           </form>
@@ -1630,7 +1677,158 @@ h2 {
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    <script>
+      // JSON Data
+      const jsonData = {
+          "totalCount": 1,
+          "records": [
+              {
+                
+               
+                  "taskDetailID": null,
+                  "executionDataId": null,
+                  "officialFormDetailID": null,
+                  "applRefNo": "SEEP/2024/00175",
+                  "taskName": null,
+                  "taskId": 23005,
+                  "serviceId": "21090008",
+                  "serviceName": "Punjab Sports Events Portal",
+                  "submissionDate": "2024-08-04T15:48:05Z",
+                  "applicantFirstName": "Khushpreet Kaur",
+                  "applicantFatherName": "Balvir Singh",
+                  "applicantMotherName": "Jaswinder Kaur",
+                  "applicantDOB": "05/06/2013",
+                  "applicantAge": "11 Years 2 Months 4 Days",
+                  "stateOfBirth": "PUNJAB",
+                  "districtOfBirth": "Mansa",
+                  "panCardNumber": null,
+                  "applicantBloodGroup": "A +",
+                  "applicantMobileNo": "9915397844",
+                  "applicantAlternateMobileNumber": null,
+                  "applicantEmail": "balvirbhikhi1@gmail.com",
+                  "applicantGender": "Female",
+                  "applicantGame": null,
+                  "level": "State,2~District",
+                  "applicationType": "Registration For Sports Directory",
+                  "applicantAgeGroup": null,
+                  "applicantEvent": null,
+                  "applicantGameCategory": null,
+                  "applicantMedal": null,
+                  "isMedalist": "Yes",
+                  "district": null,
+                  "block": null,
+                  "physicalDisability": "No",
+                  "maritialStatus": "Unmarried",
+                  "spouseName": null,
+                  "isEmployed": "No",
+                  "employmentStatus": null,
+                  "jobDescription": null,
+                  "completeAddress": "Ward No.09, Bhikhi",
+                  "region": "Urban",
+                  "addState": "PUNJAB",
+                  "addDistrict": "MANSA",
+                  "addPincode": "151504",
+                  "accountNumber": "33882655255",
+                  "accountHolder": "Self",
+                  "ifscCode": "SBIN0050379",
+                  "nameOnPassbook": "Khushpreet Kaur",
+                  "bankAddress": "Bhikhi",
+                  "bankName": "State Bank Of India",
+                  "applicationToBeSubmitted": "Mansa",
+                  "playerEducations": [
+                      {
+                          "qualification": "5~5th Class",
+                          "instituteName": "Pseb",
+                          "passingYear": "2023"
+                      },
+                      {
+                          "qualification": "6~6th Class",
+                          "instituteName": "Pseb",
+                          "passingYear": "2024"
+                      }
+                  ]
+              }
+          ]
+      };
+  
+      // Function to Populate Data
+      function populateModal(data) {
+          if (data.records.length > 0) {
+              const record = data.records[0];
+  
+              // System Information
+           
+      
+  
+              // Application Details
+              document.getElementById("applRefNo").value = record.applRefNo || "N/A";
+              document.getElementById("taskName").value = record.taskName || "N/A";
+              document.getElementById("taskId").value = record.taskId || "N/A";
+              document.getElementById("serviceId").value = record.serviceId || "N/A";
+              document.getElementById("serviceName").value = record.serviceName || "N/A";
+              document.getElementById("submissionDate").value = record.submissionDate || "N/A";
+  
+              // Personal Information
+              document.getElementById("applicantFirstName").value = record.applicantFirstName || "N/A";
+              document.getElementById("applicantFatherName").value = record.applicantFatherName || "N/A";
+              document.getElementById("applicantMotherName").value = record.applicantMotherName || "N/A";
+              document.getElementById("applicantDOB").value = record.applicantDOB || "N/A";
+              document.getElementById("applicantAge").value = record.applicantAge || "N/A";
+              document.getElementById("stateOfBirth").value = record.stateOfBirth || "N/A";
+              document.getElementById("districtOfBirth").value = record.districtOfBirth || "N/A";
+              document.getElementById("applicantBloodGroup").value = record.applicantBloodGroup || "N/A";
+              document.getElementById("applicantMobileNo").value = record.applicantMobileNo || "N/A";
+              document.getElementById("applicantAlternateMobileNumber").value = record.applicantAlternateMobileNumber || "N/A";
+              document.getElementById("applicantEmail").value = record.applicantEmail || "N/A";
+              document.getElementById("applicantGender").value = record.applicantGender || "N/A";
+              document.getElementById("physicalDisability").value = record.physicalDisability || "N/A";
+              document.getElementById("maritialStatus").value = record.maritialStatus || "N/A";
+              document.getElementById("isEmployed").value = record.isEmployed || "N/A";
+  
+              // Address Details
+              document.getElementById("completeAddress").value = record.completeAddress || "N/A";
+              document.getElementById("region").value = record.region || "N/A";
+              document.getElementById("addState").value = record.addState || "N/A";
+              document.getElementById("addDistrict").value = record.addDistrict || "N/A";
+              document.getElementById("addPincode").value = record.addPincode || "N/A";
+  
+              // Bank Details
+              document.getElementById("bankName").value = record.bankName || "N/A";
+              document.getElementById("accountNumber").value = record.accountNumber || "N/A";
+              document.getElementById("ifscCode").value = record.ifscCode || "N/A";
+              document.getElementById("accountHolder").value = record.accountHolder || "N/A";
+              document.getElementById("nameOnPassbook").value = record.nameOnPassbook || "N/A";
+              document.getElementById("bankAddress").value = record.bankAddress || "N/A";
+  
+              // Education Details
+              const educationDetails = document.getElementById("educationDetails");
+              if (record.playerEducations && record.playerEducations.length > 0) {
+                  record.playerEducations.forEach(edu => {
+                      const eduDiv = document.createElement("div");
+                      eduDiv.className = "form-row";
+                      eduDiv.innerHTML = `
+                          <div class="form-group">
+                              <label>Qualification:</label>
+                              <input type="text" value="${edu.qualification || "N/A"}" readonly>
+                          </div>
+                          <div class="form-group">
+                              <label>Institute Name:</label>
+                              <input type="text" value="${edu.instituteName || "N/A"}" readonly>
+                          </div>
+                          <div class="form-group">
+                              <label>Passing Year:</label>
+                              <input type="text" value="${edu.passingYear || "N/A"}" readonly>
+                          </div>
+                      `;
+                      educationDetails.appendChild(eduDiv);
+                  });
+              }
+          }
+      }
+  
+      // Call function to populate modal
+      populateModal(jsonData);
+  </script>
     <script>
       let currentPage = 1;
       let pageSize = 15; // Default page size
@@ -1746,7 +1944,7 @@ h2 {
                 "<td>" + (index + 1 + (currentPage - 1) * pageSize) + "</td>";
               row +=
                 '<td><a href="#" class="download-link" data-applId="' +
-                record.applId +
+                  record.applRefNo +
                 '">' +
                 record.applRefNo +
                 "</a></td>";
@@ -1762,7 +1960,15 @@ h2 {
               row += "<td>" + record.applicantAgeGroup + "</td>";
               row += "<td>" + record.applicantEvent + "</td>";
               row += "<td>" + record.applicantMedal + "</td>";
-              row += "<td><button class='isMedalistBtn' data-record='" + JSON.stringify(record) + "'>Is Medalist</button></td>";
+              if (record.isMedalist === "Yes") {
+            row += "<td><button class='isMedalistBtn' data-record='" + JSON.stringify(record) + "'>View Achievement</button></td>";
+        } else {
+            row += "<td>No Achievement</td>";
+        }
+
+        row += "</tr>";
+
+              // row += "<td><button class='isMedalistBtn' data-record='" + JSON.stringify(record) + "'>Is Medalist</button></td>";
               row += "</tr>";
 
               // Update medal counts based on the medal type
@@ -1776,10 +1982,6 @@ h2 {
               $("#playerTable tbody").append(row);
             });
           } else {
-
-
-
-            
             // If no records are available, display a message
             $("#playerTable tbody").append(
               '<tr><td colspan="9">No data available</td></tr>'
@@ -1834,11 +2036,11 @@ h2 {
       // Function to open the modal and display the document
       $(document).on("click", ".download-link", function (e) {
         e.preventDefault(); // Prevent default link behavior
-        const applId = $(this).attr("data-applid"); // Get Application ID (applId) from the link's data attribute
+        const applRefNo = $(this).attr("data-applid"); // Get Application ID (applId) from the link's data attribute
 
         // Call the API to fetch the document URL and other details
         $.ajax({
-          url: `http://10.147.24.36:8082/api/ServicePlus/GetSportSupportDoc?applId=${applId}`,
+          url: `http://10.147.24.36:8082/api/ServicePlus/GetPlayerDetailsByAppRefNo?applRefNo=${applRefNo}`,
           type: "GET",
           dataType: "json",
           success: function (response) {
